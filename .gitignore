@@ -1,0 +1,25 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore node modules if added later
+node_modules/
+
+# Ignore build/dist folders (if used in future)
+dist/
+build/
+
+# Ignore temporary and cache files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# VSCode settings (optional)
+.vscode/
+
+# Mac system file
+.AppleDouble

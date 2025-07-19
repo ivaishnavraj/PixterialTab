@@ -1,0 +1,122 @@
+/*! CLOCK CSS Only  */
+/*! don't change anything  */
+:root {
+  .its-BG {
+    fill: var(--accentLightTint);
+    background-color: var(--accentLightTint);
+  }
+
+  .sui {
+    background-color: var(--darkColor);
+  }
+
+  #hour {
+    background-color: var(--darkerColor);
+  }
+  #hour::after,
+  #minute::after {
+    background-color: var(--darkColor);
+  }
+  #second::after {
+    background-color: var(--darkColor);
+  }
+}
+
+/* left div is full clock position */
+.left-div {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+}
+/* Clock main styling */
+.clock {
+  width: 300px;
+  height: 300px;
+}
+
+/* SVG inside the clock */
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Background shape color */
+.its-BG {
+  fill: var(--accentLightTint-blue);
+}
+
+/* Center dot of the clock */
+.centerPoint {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* clock hands STARTS */
+
+/* Common styles for clock hands */
+.sui {
+  position: absolute;
+  width: 20px;
+  height: 100px;
+  background-color: var(--darkColor-blue);
+  top: -90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform-origin: bottom;
+  border-radius: 10px;
+}
+
+/* Hour hand specific styles */
+#hour {
+  height: 80px;
+  top: -70px;
+  background-color: var(--darkerColor-blue);
+}
+
+#hour::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background-color: var(--darkerColor-blue);
+  bottom: -10px;
+  border-radius: 100px;
+}
+
+/* Minute hand styles */
+#minute {
+  z-index: 9;
+}
+
+#minute::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background-color: var(--darkColor-blue);
+  bottom: -10px;
+  border-radius: 100px;
+}
+
+/* Second hand styles */
+#second {
+  background-color: transparent;
+}
+
+#second::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--darkColor-blue);
+  top: -28px;
+  border-radius: 100%;
+}
+/* clock hands ENDS */
+/* ⏰CLOCK ENDS ⏰ */

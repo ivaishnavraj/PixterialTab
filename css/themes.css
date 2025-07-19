@@ -1,0 +1,450 @@
+/*! CSS For THEMES and Theme Position  */
+/*? THEME ADDING - GUIDE FOR LAME-PERSON LIKE ME  */
+/* Do just 3 changes
+1st- under :root add themes with same variable names
+2nd - create button in html with calling variables
+3rd - THATS ALL - hehehe 😁😁 
+*/
+
+/*! GLOBAL THEME BODY
+ */
+body {
+  background-color: var(--bg-color);
+  color: var(--textColorDark);
+  font-family: "Roboto", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/*! Basic theme window page setup */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*! GLOBAL THEME VARIABLES */
+:root {
+  --radius-round: 30px;
+  --bg-color: #ffffff;
+  --accentLightTint: #f0f0f0;
+  --darkerColor: #888888;
+  --darkColor: #555555;
+  --textColorDark: #000000;
+  --textColorLight: #ffffff; 
+  --font-for-dark:var(--accentLightTint);
+  --font-for-light:var(--textColorDark)
+}
+
+/*! 🌞 LIGHT THEMES */
+/*? BLUE */
+.theme-blue {
+  --bg-color: #bbd6fd;
+  --accentLightTint: #e2eeff;
+  --darkerColor: #3569b2;
+  --darkColor: #4382ec;
+  --textColorDark: #1b3041;
+  --textColorLight: #ffffff; /* Contrast for blue tones */
+}
+/*? Teal */
+.theme-teal {
+  --bg-color: #c7f0db;
+  --accentLightTint: #d8f8ec;
+  --darkerColor: #2a8c68;
+  --darkColor: #44c292;
+  --textColorDark: #143528;
+  --textColorLight: #ffffff; /* Good for green-teal contrast */
+}
+
+/*? Rose */
+.theme-rose {
+  --bg-color: #f5e1de;
+  --accentLightTint: #fbeceb;
+  --darkerColor: #9f5955;
+  --darkColor: #e17c74;
+  --textColorDark: #4b2a27;
+  --textColorLight: #fff5f4;
+}
+/*? Sand - removed */
+/* .theme-sand {
+  --bg-color: #f0e7dc;
+  --accentLightTint: #f9f5f1;
+  --darkerColor: #927f6b;
+  --darkColor: #bfa78e;
+  --textColorDark: #3a312a;
+  --textColorLight: #ffffff;
+} */
+/*? Lime */
+.theme-lime {
+  --bg-color: #e7fbcf;
+  --accentLightTint: #f4fde7;
+  --darkerColor: #648e2e;
+  --darkColor: #a3e048;
+  --textColorDark: #2f3e1c;
+  --textColorLight: #f9fff4;
+}
+
+/*! 🌙 DARK THEMES */
+/*? Plasma */
+.theme-plasma {
+  --bg-color: #1b0f2a;
+  --accentLightTint: #311b47;
+  --darkerColor: #6d3ca5;
+  --darkColor: #9e6cf2;
+  --textColorDark: #e6daff;
+  --textColorLight: #faf0ff;
+}
+/*? Shadow */
+.theme-shadow {
+  --bg-color: #121212;
+  --accentLightTint: #1f1f1f;
+  --darkerColor: #3a3a3a;
+  --darkColor: #5a5a5a;
+  --textColorDark: #eeeeee;
+  --textColorLight: #ffffff;
+}
+/*? Ocean Dark */
+.theme-ocean-dark {
+  --bg-color: #0f1e2a;
+  --accentLightTint: #1c2c3a;
+  --darkerColor: #2f4858;
+  --darkColor: #4b6c82;
+  --textColorDark: #d4e9f7;
+  --textColorLight: #f5faff;
+}
+/*? Forest Dark */
+.theme-forest-dark {
+  --bg-color: #10281f;
+  --accentLightTint: #1a3a2e;
+  --darkerColor: #2f5d4b;
+  --darkColor: #448b6c;
+  --textColorDark: #d6fff1;
+  --textColorLight: #e9fff6;
+}
+/*? Dark Blue */
+.theme-blue-dark {
+  --bg-color: #0d1b2a;
+  --accentLightTint: #1b263b;
+  --darkerColor: #415a77;
+  --darkColor: #778da9;
+  --textColorDark: #e0e1dd;
+  --textColorLight: #f5faff;
+}
+/*? Dark Orange */
+.theme-orange-dark {
+  --bg-color: #261c1a;
+  --accentLightTint: #402d23;
+  --darkerColor: #a04c27;
+  --darkColor: #d6652e;
+  --textColorDark: #ffe4c4;
+  --textColorLight: #fff7f1;
+}
+/*? Dark Yellow */
+.theme-yellow-dark {
+  --bg-color: #2b2b12;
+  --accentLightTint: #3b3b1a;
+  --darkerColor: #a68f00;
+  --darkColor: #ffd700;
+  --textColorDark: #fffacd;
+  --textColorLight: #fffff0;
+}
+/*? Dark Green */
+.theme-green-dark {
+  --bg-color: #102117;
+  --accentLightTint: #183d2c;
+  --darkerColor: #2e8b57;
+  --darkColor: #3cb371;
+  --textColorDark: #d0f5d8;
+  --textColorLight: #e5fff0;
+}
+/*? Purple Dark */
+.theme-purple-dark {
+  --bg-color: #1a102e;
+  --accentLightTint: #2b1c47;
+  --darkerColor: #5d3ea8;
+  --darkColor: #8a5dd0;
+  --textColorDark: #ebd9ff;
+  --textColorLight: #f8f0ff;
+}
+
+/*! 🎨 SPECIAL THEMES */
+/*? dot - Black + Red */
+.theme-DotRed {
+  --bg-color: #1b1b1d;
+  --accentLightTint: #2a2a2d;
+  --darkerColor: #ef5c5b;
+  --darkColor: #d71921;
+  --textColorDark: #ffffff;
+  --textColorLight: #000000;
+}
+/*? dot Light Mode */
+.theme-DotWhite {
+  --bg-color: #ffffff;
+  --accentLightTint: #f0f0f0;
+  --darkerColor: #c0c0c0;
+  --darkColor: #323231;
+  --textColorDark: #111111;
+  --textColorLight: #ffffff;
+}
+
+/*? Mocha */
+.theme-mocha {
+  --bg-color: #1a1a27;
+  --accentLightTint: #2b2b3d;
+  --darkerColor: #3c3c54;
+  --darkColor: #94e2d5;
+  --textColorDark: #d3d6e2;
+  --textColorLight: #2b2b3d;
+}
+/*?  Macchiato */
+.theme-macchiato {
+  --bg-color: #24273a;
+  --accentLightTint: #363a4f;
+  --darkerColor: #f4dbd6;
+  --darkColor: #ed8796;
+  --textColorDark: #cad3f5;
+  --textColorLight: #1e1e2e;
+}
+
+/*! retro pop */
+.theme-RetroPop {
+  --bg-color: #dbcca8;              /* Parchment / map background */
+  --accentLightTint: #fceecf;       /* Soft sand tone */
+  --darkerColor: #e63946;           /* Straw Hat Red */
+  --darkColor: #0077b6;             /* Ocean Blue */
+  --textColorDark: #2f2f2f;
+  --textColorLight: #ffffff;
+}
+ /* Cyberpunk 2077 */
+.theme-PixelPunk {
+  --bg-color: #0c0c0c;
+  --accentLightTint: #1a1a1a;
+  --darkerColor: #ffe600;
+  --darkColor: #ff005c;
+  --textColorDark: #ffffff;
+  --textColorLight: #000000;
+}
+
+
+/*? BlockRoot - Pixel Green + Dirt Brown */
+.theme-BlockRoot {
+  --bg-color: #2e1f13;          /* Deep dirt brown */
+  --accentLightTint: #3e2a1e;   /* Muddy brown */
+  --darkerColor: #4caf50;       /* Grass green accent */
+  --darkColor: #81c784;         /* Soft green (like vines) */
+  --textColorDark: #f0f0f0;
+  --textColorLight: #1b1b1b;
+}
+
+/*? Linux Terminal - Hacker Mode */
+.theme-Shell-Matrix {
+  --bg-color: #121212;           /* Soft black */
+  --accentLightTint: #1f1f1f;    /* Slightly lighter */
+  --darkerColor: #00ff00;        /* Neon green */
+  --darkColor: #66ff66;          /* Softer green */
+  --textColorDark: #ccffcc;
+  --textColorLight: #0f0f0f;
+}
+
+/*? Valor Styled Pink Contrast */
+.theme-ValorPix {
+  --bg-color: #0f1923;
+  --accentLightTint: #1a2633;
+  --darkerColor: #ff4f71;  /* Lighter pink */
+  --darkColor: #ff2c54;    /* Stronger Valorant red-pink */
+  --textColorDark: #eaeaea;
+  --textColorLight: #111111;
+}
+
+/*? HueStack - Inspired by Hue Logo Colors */
+.theme-HueStack{
+  --bg-color: #1e1e1e;
+  --accentLightTint: #2c2c2c;
+  --darkerColor: #a259ff;   /* Figma purple */
+  --darkColor: #f24e1e;     /* Figma orange */
+  --textColorDark: #e0e0e0;
+  --textColorLight: #121212;
+}
+
+
+
+/*! ? THEME STYLES ENDED */
+/* ----------------------- */
+/* ----------------------- */
+/* ----------------------- */
+
+/*? MY TITLE */
+.my-title {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+.my-title:hover {
+  cursor: default;
+  user-select: none;
+  color: var(--darkColor);
+}
+
+.heading-title {
+  margin-left: 8px;
+}
+.heading-title:hover {
+  cursor: default;
+  user-select: none;
+  color: var(--darkColor);
+}
+
+
+/*! THEME TOGGLE CONTAINER */
+.theme-toggle-container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 999;
+}
+
+/*! TOGGLE BUTTON */
+#themeToggleBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--darkColor);
+  color: var(--textColorLight); /* ✅ Use light text on dark bg */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+}
+
+#themeToggleBtn:hover {
+  background-color: var(--darkerColor);
+}
+
+/*? THEME PANEL */
+#theme-panel {
+  top: 70px;
+  right: 30px;
+  width: 500px;
+  max-height: 0;
+  position: fixed;
+  transform: translate(-15%, -12%)  scale(0.85);;
+  overflow-y: hidden;
+  background-color: var(--accentLightTint);
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 16px;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 650px;
+  pointer-events: auto;
+  z-index: 1;
+  scrollbar-width: none;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  scrollbar-width: none;
+  display: block;
+}
+
+#theme-panel.open {
+  /* display: block; */
+  max-height: 100%;
+    overflow-y: auto;
+  padding: 16px;
+}
+
+/*? THEME GRID SECTION */
+.theme-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.theme-section h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--textColorDark);
+  border-bottom: 1px solid var(--darkColor);
+  padding-bottom: 5px;
+  pointer-events: none;
+}
+
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  /* DONT CHANGE GRID */
+  gap: 12px;
+
+}
+
+.theme-btn {
+  background-color: var(--accentLightTint);
+  color: var(--textColorDark);
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  user-select: none;
+  width: 100%;
+  min-height: 40px;
+}
+
+.theme-btn:hover {
+  background-color: var(--darkColor);
+  color: var(--textColorLight); /* ✅ High contrast */
+}
+
+/* ! ABOUT SECTION (INSIDE PANEL) */
+
+.about-btn {
+
+  background-color: var(--darkColor);
+  color: var(--textColorLight);
+  /* ✅ Better contrast on dark */
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  white-space: nowrap;
+  user-select: none;
+  width: 100%;
+  max-width: 100%;
+  min-height: 40px;
+}
+
+
+.about-btn:hover {
+  background-color: var(--darkerColor); /* ✅ Fixed typo */
+  color: var(--textColorDark); /* For contrast */
+}
+
+a {
+  text-decoration: none;
+}
+
+#theme-panel::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

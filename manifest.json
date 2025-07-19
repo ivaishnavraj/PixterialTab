@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Pixterial Tab",
+  "version": "1.0",
+"description": "A minimal new tab page with clock, dynamic themes, and a distraction-free layout. Inspired by Material design.",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "geolocation"
+  ],
+
+  "action": {
+    "default_title": "Pixterial Tab"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pixterialtab@vaishnavraj",
+      "strict_min_version": "109.0"
+    }
+  }
+}
