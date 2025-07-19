@@ -21,7 +21,7 @@ Pixterial Tab is a **clean, Pixel-inspired new tab page** that blends functional
 
 ### 🔹 Option 1: Direct ZIP Download - From Latest Release
 
-   [![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue.svg)](https://github.com/ivaishnavraj/PixterialTab/releases/).
+   [![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue.svg)](https://github.com/ivaishnavraj/PixterialTab/releases/)
 
 ### 🔹 Option 2: From GitHub Repository
 
@@ -80,7 +80,7 @@ Open your preferred browser and enter the appropriate URL in the address bar:
 
 
 
-<details><summary>Visual Guide - Here</summary>
+<details><summary>Visual Guide - Expand Here</summary>
 
 These images will help walk you through the process step by step.
 
