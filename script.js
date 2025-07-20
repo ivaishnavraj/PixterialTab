@@ -201,7 +201,7 @@ function searchGoogle() {
   const query = searchInput.value.trim();
   if (query !== "") {
     const googleURL = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-    window.open(googleURL);
+    window.location.href = googleURL;
   }
 }
 
