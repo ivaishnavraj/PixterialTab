@@ -49,7 +49,7 @@ You can install this extension manually on any Chromium-based browser by followi
 
 #### 📁 Get Ready With the Extension Files
 
-- [Download the ZIP](https://github.com/ivaishnavraj/PixterialTab/archive/refs/tags/v1.0.zip).
+- [Download the ZIP](https://github.com/ivaishnavraj/PixterialTab/releases/).
 - Extract the ZIP file to a folder on your computer.
 
 #### 🌐 To Access the Extensions Page
