@@ -34,11 +34,11 @@ Pixterial Tab is a **clean, Pixel-inspired new tab page** that blends functional
 <p align="center">
     <a href="https://addons.mozilla.org/en-US/firefox/addon/pixterial-tab/"><img src="https://github.com/ivaishnavraj/PixterialTab/blob/main/images/firefox%20downloads.png" alt="Download for Firefox" height="48" /></a>
    <a href="https://github.com/ivaishnavraj/PixterialTab"><img src="https://github.com/ivaishnavraj/PixterialTab/blob/main/images/github.png" alt="Download from GitHub" height="48" /></a>
-   <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"><img src="https://github.com/ivaishnavraj/PixterialTab/blob/main/images/edge%20downloads.png" alt="Download for Edge" height="48" /></a>
+   <a href="https://microsoftedge.microsoft.com/addons/detail/pixterial-tab/lkkgedpmgmboiippfjlkfekplhacomag"><img src="https://github.com/ivaishnavraj/PixterialTab/blob/main/images/edge%20downloads.png" alt="Download for Edge" height="48" /></a>
 
 </p>
 
-> *Releasing on Edge Store Soon.*
+> *Available in Firefox & Edge Store.*
 
 ---
 
