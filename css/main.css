@@ -180,7 +180,7 @@ body {
   position: fixed;
   /* left: 1%; */
   bottom: 0.5%;
-  transform: translate(-268%, 100%);
+  transform: translate(-225%,, 100%);
   padding: 6px 12px;
   border-radius: 10px;
   text-align: center;
